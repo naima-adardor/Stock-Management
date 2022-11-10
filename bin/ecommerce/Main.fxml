@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="632.0" prefWidth="1195.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecommerce.Menucontroller">
+   <children>
+      <AnchorPane prefHeight="632.0" prefWidth="247.0" style="-fx-background-color: #03224c;">
+         <children>
+            <Label alignment="BOTTOM_CENTER" layoutX="14.0" layoutY="-1.0" prefHeight="63.0" prefWidth="233.0" text="Gestion de stock" textAlignment="JUSTIFY" textFill="#8ebbda" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Italic" size="22.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-comptabilité-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button fx:id="btn_reclamation" alignment="CENTER" layoutX="22.0" layoutY="88.0" mnemonicParsing="false" onAction="#gestreclamation" prefHeight="72.0" prefWidth="200.0" styleClass="btnmenu-design" stylesheets="@application.css" text="Reclamations" textAlignment="RIGHT" textFill="#b9b2b2">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/fichier%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_produit" alignment="CENTER" layoutX="22.0" layoutY="486.0" mnemonicParsing="false" onAction="#gestionproduit" prefHeight="72.0" prefWidth="200.0" styleClass="btnmenu-design" stylesheets="@application.css" text="Produits" textAlignment="RIGHT" textFill="#b9b2b2">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_categ" alignment="CENTER" layoutX="22.0" layoutY="167.0" mnemonicParsing="false" onAction="#gestcateg" prefHeight="72.0" prefWidth="200.0" styleClass="btnmenu-design" stylesheets="@application.css" text="Categories" textAlignment="RIGHT" textFill="#b9b2b2">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="closebtn" alignment="CENTER" layoutX="86.0" layoutY="568.0" mnemonicParsing="false" onAction="#Arreter" prefHeight="48.0" prefWidth="54.0" styleClass="btnmenu-design" stylesheets="@application.css" textAlignment="RIGHT" textFill="#b9b2b2">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Shutdown_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_subcateg" alignment="CENTER" layoutX="22.0" layoutY="247.0" mnemonicParsing="false" onAction="#gestsubcateg" prefHeight="72.0" prefWidth="200.0" styleClass="btnmenu-design" stylesheets="@application.css" text="Sous catégories" textAlignment="RIGHT" textFill="#b9b2b2">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@../images/categories%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="45.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/debordement.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="52.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/entretien.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_promo" alignment="CENTER" layoutX="26.0" layoutY="327.0" mnemonicParsing="false" onAction="#gestpromo" prefHeight="72.0" prefWidth="200.0" styleClass="btnmenu-design" stylesheets="@application.css" text="Promotions" textAlignment="RIGHT" textFill="#b9b2b2">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="45.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/megaphone.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_marque" alignment="CENTER" layoutX="22.0" layoutY="407.0" mnemonicParsing="false" onAction="#gestmarq" prefHeight="72.0" prefWidth="200.0" styleClass="btnmenu-design" stylesheets="@application.css" text="Marques" textAlignment="RIGHT" textFill="#b9b2b2">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="52.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/brand.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="root" layoutX="247.0" prefHeight="632.0" prefWidth="951.0" style="-fx-background-color: #DCDCDC;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="531.0" fitWidth="843.0" layoutX="53.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/entrepot.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="293.0" prefWidth="436.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="ecommerce.showmsgController">
+   <children>
+      <Label layoutX="56.0" layoutY="7.0" prefHeight="29.0" prefWidth="91.0" text="Message" textFill="#50428f">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="23.0" fitWidth="29.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/chat.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-2.0" layoutY="43.0" prefHeight="6.0" prefWidth="472.0" style="-fx-background-color: #4682B4;" />
+      <TextArea fx:id="txtarea" layoutX="33.0" layoutY="58.0" prefHeight="208.0" prefWidth="419.0" />
+      <Button layoutX="412.0" layoutY="8.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="43.0" style="-fx-background-color: #ffff;" />
+      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="440.0" layoutY="-74.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="23.0" fitWidth="32.0" layoutX="422.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

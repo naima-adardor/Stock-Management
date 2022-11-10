@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecommerce.AjoutproduitController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="632.0" prefWidth="951.0">
+         <children>
+            <Pane layoutX="-13.0" layoutY="-10.0" prefHeight="58.0" prefWidth="951.0" style="-fx-background-color: #B7D4FF;" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="24.0" layoutY="24.0" text="Ajouter un article" textFill="#1207f2">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <AnchorPane layoutY="66.0" prefHeight="262.0" prefWidth="451.0" style="-fx-background-color: #778899;">
+               <children>
+                  <Label layoutX="40.0" layoutY="14.0" text="Designation">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="txtdesignation" layoutX="28.0" layoutY="47.0" prefHeight="26.0" prefWidth="395.0" style="-fx-background-color: #ffff;" />
+                  <Label layoutX="42.0" layoutY="104.0" text="Description">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <TextArea fx:id="txtdescription" layoutX="22.0" layoutY="125.0" prefHeight="77.0" prefWidth="407.0" />
+                  <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="7.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/product-description.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-2.0" layoutY="331.0" prefHeight="254.0" prefWidth="451.0" style="-fx-background-color: #808080;">
+               <children>
+                  <Label layoutX="45.0" layoutY="20.0" text="Image">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <ImageView fx:id="img1" fitHeight="126.0" fitWidth="100.0" layoutX="14.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="img2" fitHeight="126.0" fitWidth="100.0" layoutX="135.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="img3" fitHeight="126.0" fitWidth="100.0" layoutX="276.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="parcourir2" layoutX="166.0" layoutY="205.0" mnemonicParsing="false" onAction="#showOpenDialo" prefHeight="34.0" prefWidth="68.0" text="parcourir" />
+                  <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="11.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-image-48.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="parcourir1" layoutX="23.0" layoutY="204.0" mnemonicParsing="false" onAction="#showOpenDialog" prefHeight="34.0" prefWidth="68.0" text="parcourir" />
+                  <Button fx:id="parcourir3" layoutX="307.0" layoutY="205.0" mnemonicParsing="false" onAction="#showOpenDial" prefHeight="34.0" prefWidth="68.0" text="parcourir" />
+                  <Label fx:id="lbl1" layoutX="-4.0" layoutY="177.0" style="-fx-background-color: #FFFF;" text="dowloand image 1" />
+                  <Label fx:id="lbl3" layoutX="258.0" layoutY="177.0" style="-fx-background-color: #FFFF;" text="dowloand image 3" />
+                  <Label fx:id="lbl2" layoutX="117.0" layoutY="177.0" style="-fx-background-color: #FFFF;" text="dowloand image 2" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="453.0" layoutY="66.0" prefHeight="262.0" prefWidth="495.0" style="-fx-background-color: #C0C0C0;">
+               <children>
+                  <ComboBox fx:id="combocateg" layoutX="34.0" layoutY="38.0" prefWidth="150.0" promptText="Categorie...." />
+                  <ComboBox fx:id="combosubcateg" layoutX="288.0" layoutY="38.0" prefWidth="150.0" promptText="Subcategorie...." />
+                  <ComboBox fx:id="combomarque" layoutX="34.0" layoutY="102.0" prefWidth="150.0" promptText="Marque..." />
+                  <TextField fx:id="txtquantity" layoutX="31.0" layoutY="178.0" style="-fx-background-color: #fff;" />
+                  <Label layoutX="34.0" layoutY="154.0" text="La quantité">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="combosize" layoutX="288.0" layoutY="103.0" prefWidth="150.0" promptText="Size...." />
+                  <ComboBox fx:id="combocolor" layoutX="288.0" layoutY="171.0" prefWidth="150.0" promptText="Couleur..." />
+                  <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="6.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/entretien.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="257.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/palette.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="6.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-how-many-quest-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="6.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/marque%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="257.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/size-guide.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="452.0" layoutY="331.0" prefHeight="170.0" prefWidth="495.0" style="-fx-background-color: #DCDCDC;">
+               <children>
+                  <Label layoutX="44.0" layoutY="40.0" text="l'ancien  prix">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtoldprice" layoutX="26.0" layoutY="68.0" style="-fx-background-color: #fff;" />
+                  <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="7.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-sac-d'argent-euro-48.png" />
+                     </image>
+                  </ImageView>
+                  <ComboBox fx:id="combopromo" layoutX="297.0" layoutY="65.0" prefWidth="150.0" promptText="Promotion..." />
+                  <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="268.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/megaphone.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="txtprice" layoutX="28.0" layoutY="137.0" style="-fx-background-color: #fff;" />
+                  <Label layoutX="44.0" layoutY="109.0" text="Le prix actuel">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="7.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-sac-d'argent-euro-48.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button layoutX="764.0" layoutY="535.0" minWidth="45.0" mnemonicParsing="false" onAction="#ADD" prefHeight="36.0" prefWidth="45.0" styleClass="btn-imprimer" stylesheets="@application.css" text="Ajouter">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-ajouter-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
